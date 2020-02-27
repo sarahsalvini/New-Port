@@ -9,7 +9,7 @@
     
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+
     },
 
     $WIN = $(window);
@@ -25,6 +25,13 @@
     }
 
 
+
+
+
+
+
+    
+    
    /* Preloader
     * -------------------------------------------------- */
     var ssPreloader = function() {
@@ -114,6 +121,7 @@
             });
         });
     };
+
 
 
    /* photoswipe
@@ -228,10 +236,10 @@
     var ssAOS = function() {
         
         AOS.init( {
-            offset: 200,
+            offset: 100,
             duration: 600,
             easing: 'ease-in-sine',
-            delay: 300,
+            delay: 200,
             once: true,
             disable: 'mobile'
         });

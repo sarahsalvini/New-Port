@@ -88,7 +88,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-  color: #793ea5;
+  color: #D0D0FF;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -2911,9 +2911,10 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-  padding-top: 18rem;
+  padding-top: 10rem;
   padding-bottom: 18rem;
   position: relative;
+  background-color: #121212
 }
 
 .s-works::before {
@@ -2929,7 +2930,7 @@ html.no-csstransitions .home-content__main {
   height: 100%;
   opacity: .3;
   background-color: rgba(0, 0, 0, 0.9);
-  background-image: url(../images/pattern.jpg);
+  background-image: url(../images/ripple.jpg);
   background-size: 760px 380px;
 }
 
@@ -3137,7 +3138,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1000px) {
   .s-works {
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 15rem;
   }
 
@@ -3153,7 +3154,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:600px) {
   .s-works {
-    padding-top: 12rem;
+    padding-top: 10rem;
   }
 
   .masonry-wrap {
@@ -3234,7 +3235,7 @@ html.no-csstransitions .home-content__main {
 
 .clients a:hover,
 .clients a:focus {
-  color: #793ea5;
+  color: #D0D0FF;
 }
 
 .clients li {
@@ -3532,7 +3533,7 @@ html.no-csstransitions .home-content__main {
 .s-contact {
   padding-top: 16.2rem;
   padding-bottom: 21rem;
-  background-color: #5e3080;
+  background-color: #D0D0FF;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   position: relative;
@@ -3568,26 +3569,34 @@ html.no-csstransitions .home-content__main {
   font-size: 3.3rem;
   line-height: 1.636;
   margin-top: 9rem;
+  color: black;
 }
+
 
 .contact-main [class*="contact-"] {
   margin-bottom: 0;
 }
 
-.contact-main .contact-email {
+.contact-main .contactUs {
   margin-bottom: 3.6rem;
 }
 
-.contact-email a {
-  font-size: 9rem;
-  font-weight: 700;
-  line-height: 1.2;
+.contactUs a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.333;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  position: relative;
   color: #FFFFFF;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
-.contact-email a:hover,
-.contact-email a:focus {
+.contactUs a:hover,
+.contactUs a:focus {
   border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -3608,19 +3617,31 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-social li a {
-  color: white;
+  color: black;
   border: none !important;
 }
 
 .contact-social li a:hover,
 .contact-social li a:focus {
-  color: #FFFFFF;
+  color: black;
 }
 
 .contact-social li:last-child {
   margin: 0;
 }
 
+.subhead2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.333;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  color: black !important;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  position: relative;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
@@ -3628,10 +3649,6 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:1200px) {
   .contact-main {
     font-size: 3.1rem;
-  }
-
-  .contact-email a {
-    font-size: 7.6rem;
   }
 
 }
@@ -3646,19 +3663,11 @@ html.no-csstransitions .home-content__main {
     font-size: 3rem;
   }
 
-  .contact-email a {
-    font-size: 7.2rem;
-  }
-
 }
 
 @media only screen and (max-width:900px) {
   .contact-main {
     font-size: 2.8rem;
-  }
-
-  .contact-email a {
-    font-size: 6.2rem;
   }
 
   .contact-social {
@@ -3672,10 +3681,6 @@ html.no-csstransitions .home-content__main {
     font-size: 2.6rem;
   }
 
-  .contact-email a {
-    font-size: 5.5rem;
-  }
-
   .contact-social {
     font-size: 3.5rem;
   }
@@ -3685,10 +3690,6 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:700px) {
   .contact-main {
     font-size: 2.4rem;
-  }
-
-  .contact-email a {
-    font-size: 3.8rem;
   }
 
   .contact-social {
@@ -3719,20 +3720,12 @@ html.no-csstransitions .home-content__main {
     font-size: 1.8rem;
   }
 
-  .contact-email a {
-    font-size: 3rem;
-  }
-
 }
 
 @media only screen and (max-width:400px) {
   .contact-main {
     font-size: 1.6rem;
     margin-top: 4.5rem;
-  }
-
-  .contact-email a {
-    font-size: 2.5rem;
   }
 
   .contact-social {
@@ -3750,14 +3743,14 @@ footer {
   padding-top: 9rem;
   padding-bottom: 6rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #5e3080;
+  background-color: #D0D0FF;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
 }
 
 footer a {
-  color: #FFFFFF;
+  color: black;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3781,7 +3774,7 @@ footer a {
 
 .ss-go-top a {
   color: #FFFFFF;
-  background-color: #351b48;
+  background-color: black;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -3790,7 +3783,7 @@ footer a {
   letter-spacing: .3rem;
   height: 75px;
   line-height: 75px;
-  padding: 0 4rem 0 7rem;
+  padding: 0 5rem 0 5rem;
   position: absolute;
   left: 50%;
   top: -37.5px;
@@ -3808,10 +3801,7 @@ footer a {
   display: block;
   height: 16px;
   width: 12px;
-  background-image: url(../images/icons/icon-up.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+
   position: absolute;
   top: 50%;
   left: 3.5rem;
@@ -3820,7 +3810,7 @@ footer a {
 
 .ss-go-top a:hover,
 .ss-go-top a:focus {
-  background-color: #2d173d;
+  background-color: black;
 }
 
 /* ------------------------------------------------------------------- 
